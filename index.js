@@ -21,7 +21,7 @@ express()
       res.render('pages/db', results );
       client.release();
     } catch (err) {
-      console.error(err);
+      console.error("errr");
       res.send("Error " + err);
     }})
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
